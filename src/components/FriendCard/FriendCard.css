@@ -1,13 +1,13 @@
 .card {
-  border-radius: 2px;
+  border-radius: 25px;
   height: 275px;
   margin: 1rem;
   position: relative;
   width: 300px;
-  box-shadow: 0 3px 6px white, 0 3px 6px white;
+  box-shadow: 0 6px 10px grey, 0 6px 10px grey;
   text-align: left;
   cursor: pointer;
-  background: transparent;
+  background: white;
 }
 /* https://github.com/IanLunn/Hover*/
 /* Radial Out */
@@ -30,7 +30,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: white;
+  background: red;
   border-radius: 100%;
   -webkit-transform: scale(0);
   transform: scale(0);
@@ -53,6 +53,7 @@
   height: 100%;
   overflow: hidden;
   text-align: center;
+  border-radius: 25px;
 }
 .card > .img-container > img {
   width: 95%;
@@ -79,6 +80,10 @@
 }
 .card > .content {
   font-size: 22px;
-  color: white;
+  color: black;
+  text-shadow: -1px -1px 1px #aaa,
+             0px 4px 1px grey,
+             4px 4px 5px grey,
+             0px 0px 7px grey;
   text-align:center;
 }
