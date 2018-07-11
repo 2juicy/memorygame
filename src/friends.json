@@ -2,17 +2,17 @@
   {
     "id": 1,
     "name": "Angie",
-    "image": "%PUBLIC_URL%/img/Angie.png"
+    "image": "https://vignette.wikia.nocookie.net/danganronpa/images/d/d9/Angie_Yonaga_Illustration.png/revision/latest/scale-to-width-down/350?cb=20170620185338"
   },
   {
     "id": 2,
     "name": "Himiko",
-    "image": "%PUBLIC_URL%/img/Himiko.png"
+    "image": "https://vignette.wikia.nocookie.net/danganronpa/images/9/9d/Himiko_Yumeno_Illustration.png/revision/latest/scale-to-width-down/350?cb=20170620185435"
   },
   {
     "id": 3,
     "name": "Kaede",
-    "image": "%PUBLIC_URL%/img/Kaede.png"
+    "image": "https://vignette.wikia.nocookie.net/danganronpa/images/9/99/Kaede_Akamatsu_Illustration.png/revision/latest/scale-to-width-down/350?cb=20170429155934"
   },
   {
     "id": 4,
@@ -22,41 +22,41 @@
   {
     "id": 5,
     "name": "Kirumi",
-    "image": "../public/img/Kirumi.png"
+    "image": "https://vignette.wikia.nocookie.net/danganronpa/images/7/71/Kirumi_Tojo_Illustration.png/revision/latest/scale-to-width-down/350?cb=20170620185620"
   },
   {
     "id": 6,
     "name": "Korekiyo",
-    "image": "../public/img/Korekiyo.png"
+    "image": "https://vignette.wikia.nocookie.net/danganronpa/images/3/3f/Korekiyo_Shinguji_Illustration.png/revision/latest/scale-to-width-down/350?cb=20170620185357"
   },
   {
     "id": 7,
     "name": "Maki",
-    "image": "../public/img/Maki.png"
+    "image": "https://vignette.wikia.nocookie.net/danganronpa/images/1/1a/Maki_Harukawa_Illustration.png/revision/latest/scale-to-width-down/350?cb=20170620185514"
   },
   {
     "id": 8,
     "name": "Miu",
-    "image": "../public/img/Miu.png"
+    "image": "https://vignette.wikia.nocookie.net/danganronpa/images/3/3b/Miu_Iruma_Illustration.png/revision/latest/scale-to-width-down/350?cb=20170425143327"
   },
   {
     "id": 9,
     "name": "Monokid",
-    "image": "../public/img/Monokid.png"
+    "image": "https://vignette.wikia.nocookie.net/danganronpa/images/a/ab/Monokid_Illustration.png/revision/latest/scale-to-width-down/350?cb=20170620190402"
   },
   {
     "id": 10,
     "name": "Ryoma",
-    "image": "../public/img/Ryoma.png"
+    "image": "https://vignette.wikia.nocookie.net/danganronpa/images/a/ae/Ryoma_Hoshi_Illustration.png/revision/latest/scale-to-width-down/350?cb=20170620185715"
   },
   {
     "id": 11,
     "name": "Shuichi",
-    "image": "../public/img/Shuichi.png"
+    "image": "https://vignette.wikia.nocookie.net/danganronpa/images/6/6c/Shuuichi_Shuichi_Saihara_Illustration.png/revision/latest/scale-to-width-down/350?cb=20180416195826"
   },
   {
     "id": 12,
     "name": "Tenko",
-    "image": "../public/img/Tenko.png"
+    "image": "https://vignette.wikia.nocookie.net/danganronpa/images/f/fc/Tenko_Chabashira_Illustration.png/revision/latest/scale-to-width-down/350?cb=20170620185558"
   }
 ]

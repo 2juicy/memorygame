@@ -9,6 +9,7 @@ const Score = props => (
             <span>Top Score: {props.topCount}</span>
         </p>
         <p className='message'>{props.message}</p>
+        <hr/>
     </div>
 );
 
