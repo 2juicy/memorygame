@@ -27,6 +27,7 @@ class App extends Component {
       this.state.guesses.push(guess);
       console.log(this.state.guesses);
       this.setState({ count: this.state.count + 1 });
+      this.setState({ message: "Correct guess!" });
     }
     this.shuffleFriend();
   };
