@@ -21,7 +21,10 @@ class App extends Component {
 
   scoreCount = guess => {
     console.log(guess);
+    this.state.guesses.push(guess);
+    console.log(this.state.guesses);
     this.setState({ count: this.state.count + 1 });
+    console.log(this.state.count);
     this.shuffleFriend();
   };
 
