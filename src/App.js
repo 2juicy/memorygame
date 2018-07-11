@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import FriendCard from "./components/FriendCard";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
+import Score from "./components/Score";
 import friends from "./friends.json";
 
 class App extends Component {
@@ -10,11 +11,12 @@ class App extends Component {
     friends,
     count: 1,
     topCount: 0,
+    message: "Don't choose the same card twice! Click any card to get started",
     guesses: []
   };
 
   shuffleFriend = () => {
-    const friends = this.state.friends.sort(function(a, b){return 0.5 - Math.random()});;
+    const friends = this.state.friends.sort(function (a, b) { return 0.5 - Math.random() });;
     // Set this.state.friends equal to the new friends array
     this.setState({ friends });
   };
@@ -33,6 +35,11 @@ class App extends Component {
     return (
       <Wrapper>
         <Title>Clicky Game!</Title>
+        <Score
+          count={this.state.count}
+          topCount={this.state.topCount}
+          message={this.state.message}
+        />
         {this.state.friends.map(friend => (
           <FriendCard
             scoreCount={this.scoreCount}

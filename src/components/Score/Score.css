@@ -1,0 +1,9 @@
+.score, .message{
+  color: white;
+  display: block;
+  text-align:center;
+  font-size: 26px;
+}
+span{
+  margin:0px 15px 0px 25px;
+}
