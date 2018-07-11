@@ -17,46 +17,46 @@
   {
     "id": 4,
     "name": "Kaito",
-    "image": "%PUBLIC_URL%/img/Kaito.png"
+    "image": "https://vignette.wikia.nocookie.net/danganronpa/images/8/8a/Kaito_Momota_Illustration.png/revision/latest/scale-to-width-down/350?cb=20170620185637"
   },
   {
     "id": 5,
     "name": "Kirumi",
-    "image": "%PUBLIC_URL%/img/Kirumi.png"
+    "image": "../public/img/Kirumi.png"
   },
   {
     "id": 6,
     "name": "Korekiyo",
-    "image": "%PUBLIC_URL%/img/Korekiyo.png"
+    "image": "../public/img/Korekiyo.png"
   },
   {
     "id": 7,
     "name": "Maki",
-    "image": "%PUBLIC_URL%/img/Maki.png"
+    "image": "../public/img/Maki.png"
   },
   {
     "id": 8,
     "name": "Miu",
-    "image": "%PUBLIC_URL%/img/Miu.png"
+    "image": "../public/img/Miu.png"
   },
   {
     "id": 9,
     "name": "Monokid",
-    "image": "%PUBLIC_URL%/img/Monokid.png"
+    "image": "../public/img/Monokid.png"
   },
   {
     "id": 10,
     "name": "Ryoma",
-    "image": "%PUBLIC_URL%/img/Ryoma.png"
+    "image": "../public/img/Ryoma.png"
   },
   {
     "id": 11,
     "name": "Shuichi",
-    "image": "%PUBLIC_URL%/img/Shuichi.png"
+    "image": "../public/img/Shuichi.png"
   },
   {
     "id": 12,
     "name": "Tenko",
-    "image": "%PUBLIC_URL%/img/Tenko.png"
+    "image": "../public/img/Tenko.png"
   }
 ]
