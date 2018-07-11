@@ -8,15 +8,21 @@ class App extends Component {
   // Setting this.state.friends to the friends json array
   state = {
     friends,
-    count: 0,
-    topCount: 0
+    count: 1,
+    topCount: 0,
+    guesses: []
   };
 
-  shuffleFriend = id => {
-    // Filter this.state.friends for friends with an id not equal to the id being removed
+  shuffleFriend = () => {
     const friends = this.state.friends.sort(function(a, b){return 0.5 - Math.random()});;
     // Set this.state.friends equal to the new friends array
     this.setState({ friends });
+  };
+
+  scoreCount = guess => {
+    console.log(guess);
+    this.setState({ count: this.state.count + 1 });
+    this.shuffleFriend();
   };
 
   // Map over this.state.friends and render a FriendCard component for each friend object
@@ -26,7 +32,7 @@ class App extends Component {
         <Title>Clicky Game!</Title>
         {this.state.friends.map(friend => (
           <FriendCard
-            shuffleFriend={this.shuffleFriend}
+            scoreCount={this.scoreCount}
             id={friend.id}
             key={friend.id}
             name={friend.name}
