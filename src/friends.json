@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Angie",
+    "image": "/img/Angie.png"
+  },
+  {
+    "id": 2,
+    "name": "Himiko",
+    "image": "/img/Himiko.png"
+  },
+  {
+    "id": 3,
+    "name": "Kaede",
+    "image": "/img/Kaede.png"
+  },
+  {
+    "id": 4,
+    "name": "Kaito",
+    "image": "/img/Kaito.png"
+  },
+  {
+    "id": 5,
+    "name": "Kirumi",
+    "image": "/img/Kirumi.png"
+  },
+  {
+    "id": 6,
+    "name": "Korekiyo",
+    "image": "/img/Korekiyo.png"
+  },
+  {
+    "id": 7,
+    "name": "Maki",
+    "image": "/img/Maki.png"
+  },
+  {
+    "id": 8,
+    "name": "Miu",
+    "image": "/img/Miu.png"
+  },
+  {
+    "id": 9,
+    "name": "Monokid",
+    "image": "/img/Monokid.png"
+  },
+  {
+    "id": 10,
+    "name": "Ryoma",
+    "image": "/img/Ryoma.png"
+  },
+  {
+    "id": 11,
+    "name": "Shuichi",
+    "image": "/img/Shuichi.png"
+  },
+  {
+    "id": 12,
+    "name": "Tenko",
+    "image": "/img/Tenko.png"
+  }
+]
