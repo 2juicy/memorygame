@@ -22,12 +22,17 @@ class App extends Component {
   };
 
   scoreCount = guess => {
-    console.log(guess);
     if (this.state.guesses.indexOf(guess) === -1) {
       this.state.guesses.push(guess);
-      console.log(this.state.guesses);
       this.setState({ count: this.state.count + 1 });
       this.setState({ message: "Correct guess!" });
+    } else {
+      this.setState({ count: 0 });
+      this.setState({ guesses: [] });
+      this.setState({ message: "Incorrect guess!" });
+      if (this.state.count >= this.state.topCount) {
+        this.setState({ topCount: this.state.count});
+      }
     }
     this.shuffleFriend();
   };
