@@ -5,7 +5,7 @@ const Score = props => (
     <div className="container">
         <p className='score'>
             <span>Score: {props.count}</span>
-            <span></span>
+            <span>|</span>
             <span>Top Score: {props.topCount}</span>
         </p>
         <p className='message'>{props.message}</p>

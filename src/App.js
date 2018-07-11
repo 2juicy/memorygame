@@ -9,9 +9,9 @@ class App extends Component {
   // Setting this.state.friends to the friends json array
   state = {
     friends,
-    count: 1,
+    count: 0,
     topCount: 0,
-    message: "Don't choose the same card twice! Click any card to get started",
+    message: "Click on a card to earn points, but don't click on any more than once!",
     guesses: []
   };
 
@@ -23,10 +23,11 @@ class App extends Component {
 
   scoreCount = guess => {
     console.log(guess);
-    this.state.guesses.push(guess);
-    console.log(this.state.guesses);
-    this.setState({ count: this.state.count + 1 });
-    console.log(this.state.count);
+    if (this.state.guesses.indexOf(guess) === -1) {
+      this.state.guesses.push(guess);
+      console.log(this.state.guesses);
+      this.setState({ count: this.state.count + 1 });
+    }
     this.shuffleFriend();
   };
 
