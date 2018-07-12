@@ -5,6 +5,7 @@ import Title from "./components/Title";
 import Score from "./components/Score";
 import friends from "./friends.json";
 
+
 class App extends Component {
   // Setting this.state.friends to the friends json array
   state = {
@@ -12,6 +13,7 @@ class App extends Component {
     count: 0,
     topCount: 0,
     message: "Click on a card to earn points, but don't click on any more than once!",
+    textcolor: {color: 'White'},
     guesses: []
   };
 
@@ -25,11 +27,13 @@ class App extends Component {
     if (this.state.guesses.indexOf(guess) === -1) {
       this.state.guesses.push(guess);
       this.setState({ count: this.state.count + 1 });
-      this.setState({ message: "Correct guess!" });
+      this.setState({ message: "Correct guess! Score Up!" });
+      this.setState({ textcolor: {color: "#006400" }});
     } else {
       this.setState({ count: 0 });
       this.setState({ guesses: [] });
-      this.setState({ message: "Incorrect guess!" });
+      this.setState({ message: "Incorrect guess! Game Over! Click on any card to start again." });
+      this.setState({ textcolor: {color: "Red" }});
       if (this.state.count >= this.state.topCount) {
         this.setState({ topCount: this.state.count});
       }
@@ -46,6 +50,7 @@ class App extends Component {
           count={this.state.count}
           topCount={this.state.topCount}
           message={this.state.message}
+          text={this.state.textcolor}
         />
         {this.state.friends.map(friend => (
           <FriendCard
@@ -53,7 +58,6 @@ class App extends Component {
             id={friend.id}
             key={friend.id}
             name={friend.name}
-            image={friend.image}
           />
         ))}
       </Wrapper>

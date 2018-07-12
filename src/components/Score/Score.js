@@ -8,7 +8,7 @@ const Score = props => (
             <span>|</span>
             <span>Top Score: {props.topCount}</span>
         </p>
-        <p className='message'>{props.message}</p>
+        <p style={props.text} className='message'>{props.message}</p>
     </div>
 );
 

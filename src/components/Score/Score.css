@@ -8,6 +8,9 @@
              4px 2px 5px grey,
              2px 0px 7px grey;
 }
+.message{
+  font-weight:bold;
+}
 span{
   margin:0px 10px 0px 25px;
 }
