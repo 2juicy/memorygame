@@ -34,7 +34,7 @@ class App extends Component {
       this.setState({ guesses: [] });
       this.setState({ message: "Incorrect guess! Game Over! Click on any card to start again." });
       this.setState({ textcolor: {color: "Red" }});
-      if (this.state.count >= this.state.topCount) {
+      if (this.state.count > this.state.topCount) {
         this.setState({ topCount: this.state.count});
       }
     }
