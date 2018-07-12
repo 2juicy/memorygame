@@ -1,5 +1,7 @@
 .wrapper {
-  background: black;
+  background: black url('https://hdqwalls.com/download/artistic-red-forest-23-1920x1080.jpg') no-repeat;
+    background-attachment: fixed;
+    background-position: center center;;
   height: 100%;
   display: flex;
   flex-flow: row wrap;
