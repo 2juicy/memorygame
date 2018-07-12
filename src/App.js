@@ -13,7 +13,7 @@ class App extends Component {
     count: 0,
     topCount: 0,
     message: "Click on a card to earn points, but don't click on any more than once!",
-    textcolor: {color: 'White'},
+    textcolor: { color: 'White' },
     guesses: []
   };
 
@@ -28,15 +28,21 @@ class App extends Component {
       this.state.guesses.push(guess);
       this.setState({ count: this.state.count + 1 });
       this.setState({ message: "Correct guess! Score Up!" });
-      this.setState({ textcolor: {color: "#006400" }});
+      this.setState({ textcolor: { color: "#006400" } });
+      setTimeout(() => {
+        this.setState({ textcolor: { color: "White" } });
+      }, 3000);
     } else {
       this.setState({ count: 0 });
       this.setState({ guesses: [] });
       this.setState({ message: "Incorrect guess! Game Over! Click on any card to start again." });
-      this.setState({ textcolor: {color: "Red" }});
+      this.setState({ textcolor: { color: "Red" } });
       if (this.state.count > this.state.topCount) {
-        this.setState({ topCount: this.state.count});
+        this.setState({ topCount: this.state.count });
       }
+      setTimeout(() => {
+        this.setState({ textcolor: { color: "White" } });
+      }, 3000);
     }
     this.shuffleFriend();
   };
