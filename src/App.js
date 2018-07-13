@@ -31,7 +31,7 @@ class App extends Component {
       this.setState({ textcolor: { color: "#006400" } });
       setTimeout(() => {
         this.setState({ textcolor: { color: "White" } });
-      }, 3000);
+      }, 500);
     } else {
       this.setState({ count: 0 });
       this.setState({ guesses: [] });
@@ -42,7 +42,7 @@ class App extends Component {
       }
       setTimeout(() => {
         this.setState({ textcolor: { color: "White" } });
-      }, 3000);
+      }, 500);
     }
     this.shuffleFriend();
   };
