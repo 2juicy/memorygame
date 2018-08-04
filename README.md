@@ -4,5 +4,5 @@ A Danganronpa themed puzzle/memory game made with React. First game made with Re
 
 ### Credits
 
-* [Danganronpa Wikia](http://danganronpa.wikia.com/wiki/)
-* [Hover](https://github.com/IanLunn/Hover)
+* Images from [Danganronpa Wikia](http://danganronpa.wikia.com/wiki/)
+* Used CSS code from [Hover](https://github.com/IanLunn/Hover)
