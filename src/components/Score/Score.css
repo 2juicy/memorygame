@@ -1,19 +1,28 @@
-.score, .message{
+.score,
+.message {
   color: white;
   display: block;
-  text-align:center;
+  text-align: center;
   font-size: 26px;
-  text-shadow: -1px -1px 1px #aaa,
-             0px 2px 3px grey,
-             4px 2px 5px grey,
-             2px 0px 7px grey;
+  text-shadow: -1px -1px 1px #aaa, 0px 2px 3px grey, 4px 2px 5px grey,
+    2px 0px 7px grey;
 }
-.message{
-  font-weight:bold;
+.message {
+  font-weight: bold;
 }
-span{
-  margin:0px 10px 0px 25px;
+span {
+  margin: 0px 10px 0px 25px;
 }
-.container{
-  max-width: 100%!important;
+.container {
+  max-width: 100% !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  .score,
+  .message {
+    font-size: 20px;
+  }
+  span {
+    margin: 0px 5px 0px 12.5px;
+  }
 }
