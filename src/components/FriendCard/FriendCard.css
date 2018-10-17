@@ -1,7 +1,8 @@
 .card {
   border-radius: 25px;
-  height: 250px;
-  width: 275px;
+  height: 225px;
+  width: 250px;
+  margin: 10px;
   box-shadow: 0 6px 10px grey, 0 6px 10px grey;
   text-align: left;
   cursor: pointer;
@@ -120,7 +121,7 @@
   }
 } */
 
-@media only screen and (min-width: 1480px) {
+@media only screen and (min-width: 2030px) {
   .card {
     height: 375px;
     width: 400px;
@@ -130,7 +131,6 @@
 
 @media only screen and (max-width: 1024px) {
   .card {
-    height: 225px;
-    width: 250px;
+    margin: 0px;
   }
 }
