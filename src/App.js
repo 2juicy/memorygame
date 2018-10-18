@@ -26,6 +26,7 @@ class App extends Component {
   };
 
   scoreCount = guess => {
+    clearTimeout(this.delay);
     if (this.state.guesses.indexOf(guess) === -1) {
       this.state.guesses.push(guess);
 
@@ -52,6 +53,12 @@ class App extends Component {
       }, 500);
     }
     this.shuffleFriend();
+    this.delay = setTimeout(() => {
+      this.setState({
+        message:
+          "Click on a card to earn points, but don't click on any more than once!"
+      });
+    }, 3000);
   };
 
   // Map over this.state.friends and render a FriendCard component for each friend object
