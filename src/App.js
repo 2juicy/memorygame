@@ -30,7 +30,7 @@ class App extends Component {
       this.state.guesses.push(guess);
       this.setState({ count: this.state.count + 1 });
       this.setState({ message: "Correct guess! Score Up!" });
-      this.setState({ textcolor: { color: "DarkGreen " } });
+      this.setState({ textcolor: { color: "DarkGreen" } });
       setTimeout(() => {
         this.setState({ textcolor: { color: "White" } });
       }, 500);
