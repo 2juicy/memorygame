@@ -28,6 +28,9 @@ class App extends Component {
   scoreCount = guess => {
     if (this.state.guesses.indexOf(guess) === -1) {
       this.state.guesses.push(guess);
+
+      // win condition can go here
+
       this.setState({ count: this.state.count + 1 });
       this.setState({ message: "Correct guess! Score Up!" });
       this.setState({ textcolor: { color: "DarkGreen" } });
