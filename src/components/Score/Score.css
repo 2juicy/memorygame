@@ -4,7 +4,7 @@
   display: block;
   text-align: center;
   font-size: 26px;
-  text-shadow: -1px -1px 1px #aaa, 0px 2px 3px grey, 4px 2px 5px grey,
+  text-shadow: -1px -1px 1px gray, 0px 2px 3px grey, 4px 2px 5px grey,
     2px 0px 7px grey;
 }
 .message {
