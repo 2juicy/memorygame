@@ -30,14 +30,18 @@ class App extends Component {
     if (this.state.guesses.indexOf(guess) === -1) {
       this.state.guesses.push(guess);
       console.log(this.state.guesses);
-      // win condition can go here
-
-      this.setState({ count: this.state.count + 1 });
-      this.setState({ message: "Correct guess! Score Up!" });
-      this.setState({ textcolor: { color: "DarkGreen" } });
-      setTimeout(() => {
-        this.setState({ textcolor: { color: "White" } });
-      }, 500);
+      if (this.state.count === 12) {
+        this.setState({ count: 0 });
+        this.setState({ guesses: [] });
+        this.setState({ message: "GG YOU WIN!!!" });
+      } else {
+        this.setState({ count: this.state.count + 1 });
+        this.setState({ message: "Correct guess! Score Up!" });
+        this.setState({ textcolor: { color: "DarkGreen" } });
+        setTimeout(() => {
+          this.setState({ textcolor: { color: "White" } });
+        }, 500);
+      }
     } else {
       this.setState({ count: 0 });
       this.setState({ guesses: [] });
