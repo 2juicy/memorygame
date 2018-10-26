@@ -29,7 +29,6 @@ class App extends Component {
     clearTimeout(this.delay);
     if (this.state.guesses.indexOf(guess) === -1) {
       this.state.guesses.push(guess);
-      console.log(this.state.guesses);
       if (this.state.count === 11) {
         this.setState({ count: 0 });
         this.setState({ guesses: [] });
