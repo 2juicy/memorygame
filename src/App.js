@@ -29,7 +29,7 @@ class App extends Component {
     clearTimeout(this.delay);
     if (this.state.guesses.indexOf(guess) === -1) {
       this.state.guesses.push(guess);
-
+      console.log(this.state.guesses);
       // win condition can go here
 
       this.setState({ count: this.state.count + 1 });
