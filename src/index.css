@@ -4,7 +4,9 @@
 }
 
 body {
-  background: black url("/img/background.jpg") no-repeat center center fixed;
+  background: black
+    url("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/567640/87cf9efc4912d7d7b4bd6fdb2b5a1f6ad4ee47a9.jpg")
+    no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
