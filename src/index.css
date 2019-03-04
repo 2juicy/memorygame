@@ -4,9 +4,7 @@
 }
 
 body {
-  background: black
-    url("https://hdqwalls.com/download/artistic-red-forest-23-1920x1080.jpg")
-    no-repeat center center fixed;
+  background: black url("/img/background.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
