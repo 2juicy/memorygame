@@ -1,23 +1,22 @@
 import React from "react";
 
 const footerStyle = {
-  backgroundColor: "purple",
-  fontSize: "20px",
-  color: "white",
+  background: "rgba(0, 0, 0, 0.33)",
   borderTop: "1px solid #E7E7E7",
   textAlign: "center",
-  padding: "20px",
+  padding: "5px",
   position: "fixed",
   left: "0",
   bottom: "0",
-  height: "120px",
-  width: "100%"
+  height: "100px",
+  width: "100%",
+  pointerEvents: "none"
 };
 
 const phantomStyle = {
   display: "block",
   padding: "20px",
-  height: "120px",
+  height: "100px",
   width: "100%"
 };
 
