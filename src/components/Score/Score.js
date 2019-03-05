@@ -2,7 +2,7 @@ import React from "react";
 import "./Score.css";
 
 const Score = props => (
-  <div className="container">
+  <div>
     <p className="score">
       <span>Score: {props.count}</span>
       <span className="visi">|</span>
