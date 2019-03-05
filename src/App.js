@@ -4,6 +4,7 @@ import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import Score from "./components/Score";
 import friends from "./friends.json";
+import Footer from "./components/Footer/Footer";
 
 class App extends Component {
   // Setting this.state.friends to the friends json array
@@ -85,6 +86,9 @@ class App extends Component {
             />
           ))}
         </div>
+        <Footer>
+          <p>Stuff</p>
+        </Footer>
       </Wrapper>
     );
   }
