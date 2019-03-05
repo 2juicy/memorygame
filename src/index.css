@@ -4,7 +4,8 @@
 }
 
 body {
-  background: black url(~/img/bgimage.jpg) no-repeat center center fixed;
+  background: black url(/clickygame/img/bgimage.jpg) no-repeat center center
+    fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
