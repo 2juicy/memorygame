@@ -70,12 +70,6 @@ class App extends Component {
     return (
       <Wrapper>
         <Title>Clicky Game!</Title>
-        <Score
-          count={this.state.count}
-          topCount={this.state.topCount}
-          message={this.state.message}
-          text={this.state.textcolor}
-        />
         <div className="box">
           {this.state.friends.map(friend => (
             <FriendCard
@@ -87,7 +81,12 @@ class App extends Component {
           ))}
         </div>
         <Footer>
-          <p>Stuff</p>
+          <Score
+            count={this.state.count}
+            topCount={this.state.topCount}
+            message={this.state.message}
+            text={this.state.textcolor}
+          />
         </Footer>
       </Wrapper>
     );

@@ -10,14 +10,14 @@ const footerStyle = {
   position: "fixed",
   left: "0",
   bottom: "0",
-  height: "60px",
+  height: "120px",
   width: "100%"
 };
 
 const phantomStyle = {
   display: "block",
   padding: "20px",
-  height: "60px",
+  height: "120px",
   width: "100%"
 };
 
