@@ -7,7 +7,7 @@ const FriendCard = props => (
       <img alt={props.name} src={`img/${props.name}.png`} />
     </div>
     <div className="content">
-          <strong>{props.name}</strong> 
+      <strong>{props.name}</strong>
     </div>
   </div>
 );

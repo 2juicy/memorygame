@@ -69,7 +69,9 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title>Clicky Game!</Title>
+        <div className="titlebox">
+          <Title>Clicky Game!</Title>
+        </div>
         <div className="box">
           {this.state.friends.map(friend => (
             <FriendCard
