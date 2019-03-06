@@ -5,10 +5,10 @@
 
 body {
   /* Development path */
-  background: black url(/img/bgimage.jpg) no-repeat center center fixed;
+  /* background: black url(/img/bgimage.jpg) no-repeat center center fixed; */
   /* Production build path */
-  /* background: black url(/clickygame/img/bgimage.jpg) no-repeat center center
-    fixed; */
+  background: black url(/clickygame/img/bgimage.jpg) no-repeat center center
+    fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -34,4 +34,16 @@ body,
   flex-wrap: wrap;
   padding: 10px;
   justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 1024px) {
+  .box {
+    margin-top: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .box {
+    margin-top: 1.1rem;
+  }
 }
