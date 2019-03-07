@@ -1,20 +1,19 @@
 .wrapper {
   height: 100%;
-  padding: 25px 100px 0 100px;
-  width: 90%;
+  padding: 25px 75px 0 75px;
+  width: 95%;
   margin: auto;
 }
 
 @media only screen and (min-width: 1920px) {
   .wrapper {
-    padding: 25px 150px 0 150px;
+    padding: 25px 100px 0 100px;
     width: 85%;
   }
 }
 
 @media only screen and (min-width: 2560px) {
   .wrapper {
-    padding: 25px 150px 0 150px;
     width: 90%;
   }
 }
