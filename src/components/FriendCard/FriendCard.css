@@ -114,7 +114,7 @@
   border-radius: 30px 30px 30px 30px;
 }
 
-@media only screen and (min-width: 1921px) {
+@media only screen and (min-width: 1920px) {
   .card {
     height: 250px;
     width: 275px;
