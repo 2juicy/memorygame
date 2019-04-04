@@ -5,6 +5,7 @@
   color: white;
   text-shadow: -1px -1px 1px #aaa, 0px 4px 1px grey, 4px 4px 5px grey,
     0px 0px 7px grey;
+  margin: 0px;
 }
 
 @media only screen and (max-width: 1024px) {
