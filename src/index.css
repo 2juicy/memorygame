@@ -33,15 +33,3 @@ body,
   padding: 10px;
   justify-content: space-evenly;
 }
-
-/* @media only screen and (max-width: 1024px) {
-  .box {
-    margin-top: 1.5rem;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  .box {
-    margin-top: 1.1rem;
-  }
-} */
