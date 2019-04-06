@@ -122,11 +122,19 @@
   }
 }
 
-@media only screen and (min-width: 2560px) {
+@media only screen and (min-width: 2400px) {
   .card {
     height: 400px;
     width: 425px;
     margin: 20px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .card {
+    margin: 0px;
+    height: 200px;
+    width: 225px;
   }
 }
 

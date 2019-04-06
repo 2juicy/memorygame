@@ -12,13 +12,20 @@
   }
 }
 
-@media only screen and (min-width: 2560px) {
+@media only screen and (min-width: 2400px) {
   .wrapper {
     width: 90%;
   }
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1300px) {
+  .wrapper {
+    padding: 5px 0 0 0;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
   .wrapper {
     padding: 5px 0 0 0;
     width: auto;
