@@ -15,7 +15,8 @@ class App extends Component {
     message:
       "Click on a card to earn points, but don't click on any more than once!",
     textcolor: { color: "White" },
-    guesses: []
+    guesses: [],
+    display: null
   };
 
   shuffleFriend = () => {
@@ -27,6 +28,9 @@ class App extends Component {
   };
 
   scoreCount = guess => {
+    if (!this.state.display) {
+      this.setState({ display: "none" });
+    }
     clearTimeout(this.delay);
     if (this.state.guesses.indexOf(guess) === -1) {
       this.state.guesses.push(guess);
@@ -69,9 +73,11 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <div className="titlebox">
-          <Title>Memory Game!</Title>
-        </div>
+        {this.state.display ? null : (
+          <div className="titlebox">
+            <Title>Memory Game!</Title>
+          </div>
+        )}
         <div className="box">
           {this.state.friends.map(friend => (
             <FriendCard
