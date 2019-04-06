@@ -1,6 +1,6 @@
 {
-  "name": "clickygame",
-  "homepage": "https://2juicy.github.io/clickygame",
+  "name": "memorygame",
+  "homepage": "https://2juicy.github.io/memorygame",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
