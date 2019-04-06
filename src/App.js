@@ -70,7 +70,7 @@ class App extends Component {
     return (
       <Wrapper>
         <div className="titlebox">
-          <Title>Clicky Game!</Title>
+          <Title>Memory Game!</Title>
         </div>
         <div className="box">
           {this.state.friends.map(friend => (
