@@ -74,11 +74,7 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        {this.state.display ? (
-          <div className="titlebox">
-            <Title>Memory Game!</Title>
-          </div>
-        ) : null}
+        {this.state.display ? <Title>Memory Game!</Title> : null}
         <Box>
           {this.state.friends.map(friend => (
             <FriendCard
