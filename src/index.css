@@ -26,18 +26,3 @@ body,
 .titlebox {
   text-align: center;
 }
-
-.box {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  justify-content: center;
-}
-
-@media only screen and (max-width: 1019px) {
-  .box {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    justify-content: space-evenly;
-  }
-}

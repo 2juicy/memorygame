@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import FriendCard from "./components/FriendCard";
 import Wrapper from "./components/Wrapper";
+import Box from "./components/Box";
 import Title from "./components/Title";
 import Score from "./components/Score";
 import friends from "./friends.json";
@@ -78,7 +79,7 @@ class App extends Component {
             <Title>Memory Game!</Title>
           </div>
         ) : null}
-        <div className="box">
+        <Box>
           {this.state.friends.map(friend => (
             <FriendCard
               scoreCount={this.scoreCount}
@@ -87,7 +88,7 @@ class App extends Component {
               name={friend.name}
             />
           ))}
-        </div>
+        </Box>
         <Footer>
           <Score
             count={this.state.count}
