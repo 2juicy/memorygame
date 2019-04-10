@@ -20,13 +20,13 @@ const phantomStyle = {
   width: "100%"
 };
 
-function Footer({ children }) {
+const Footer = props => {
   return (
     <div>
       <div style={phantomStyle} />
-      <div style={footerStyle}>{children}</div>
+      <div style={footerStyle}>{props.children}</div>
     </div>
   );
-}
+};
 
 export default Footer;
