@@ -1,0 +1,19 @@
+.footer {
+  background: rgba(0, 0, 0, 0.33);
+  border-top: 1px solid #e7e7e7;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  pointer-events: none;
+}
+
+.phantom {
+  display: block;
+  padding: 20px;
+  height: 100px;
+  width: 100%;
+}
