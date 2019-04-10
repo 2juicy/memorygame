@@ -1,7 +1,7 @@
 import React from "react";
-import "./FriendCard.css";
+import "./Card.css";
 
-const FriendCard = props => (
+const Card = props => (
   <div onClick={() => props.scoreCount(props.name)} className="card">
     <div className="img-container hvr-radial-out">
       <img alt={props.name} src={`img/${props.name}.png`} />
@@ -12,4 +12,4 @@ const FriendCard = props => (
   </div>
 );
 
-export default FriendCard;
+export default Card;

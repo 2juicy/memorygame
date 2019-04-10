@@ -1,16 +1,16 @@
 import React, { Component } from "react";
-import FriendCard from "./components/FriendCard";
+import Card from "./components/Card";
 import Wrapper from "./components/Wrapper";
 import Board from "./components/Board";
 import Title from "./components/Title";
 import Score from "./components/Score";
 import Footer from "./components/Footer";
-import friends from "./friends.json";
+import cards from "./cards.json";
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
+  // Setting this.state.cards to the cards json array
   state = {
-    friends,
+    cards,
     count: 0,
     topCount: 0,
     message:
@@ -20,12 +20,12 @@ class App extends Component {
     display: true
   };
 
-  shuffleFriend = () => {
-    const friends = this.state.friends.sort(function(a, b) {
+  shuffleCard = () => {
+    const cards = this.state.cards.sort(function(a, b) {
       return 0.5 - Math.random();
     });
-    // Set this.state.friends equal to the new friends array
-    this.setState({ friends });
+    // Set this.state.cards equal to the new cards array
+    this.setState({ cards });
   };
 
   scoreCount = guess => {
@@ -61,7 +61,7 @@ class App extends Component {
         this.setState({ textcolor: { color: "White" } });
       }, 500);
     }
-    this.shuffleFriend();
+    this.shuffleCard();
     this.delay = setTimeout(() => {
       this.setState({
         message:
@@ -70,18 +70,18 @@ class App extends Component {
     }, 5000);
   };
 
-  // Map over this.state.friends and render a FriendCard component for each friend object
+  // Map over this.state.cards and render a Card component for each card object
   render() {
     return (
       <Wrapper>
         {this.state.display ? <Title>Memory Game!</Title> : null}
         <Board>
-          {this.state.friends.map(friend => (
-            <FriendCard
+          {this.state.cards.map(card => (
+            <Card
               scoreCount={this.scoreCount}
-              id={friend.id}
-              key={friend.id}
-              name={friend.name}
+              id={card.id}
+              key={card.id}
+              name={card.name}
             />
           ))}
         </Board>
