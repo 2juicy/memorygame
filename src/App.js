@@ -75,7 +75,7 @@ class App extends Component {
     return (
       <Wrapper>
         <a
-          className="source"
+          id="source"
           href="https://github.com/2juicy/memorygame"
           target="_blank"
           rel="noopener noreferrer"

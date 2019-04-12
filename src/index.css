@@ -23,7 +23,7 @@ body,
   height: 100%;
 }
 
-.source {
+#source {
   color: #1db0ff;
   font-size: 0.9rem;
   font-style: italic;
