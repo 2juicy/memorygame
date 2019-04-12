@@ -22,3 +22,11 @@ body,
   margin: 0;
   height: 100%;
 }
+
+.source {
+  color: #1db0ff;
+  font-size: 0.9rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

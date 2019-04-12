@@ -74,6 +74,14 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
+        <a
+          className="source"
+          href="https://github.com/2juicy/memorygame"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Source
+        </a>
         {this.state.display ? <Title>Memory Game!</Title> : null}
         <Board>
           {this.state.cards.map(card => (
