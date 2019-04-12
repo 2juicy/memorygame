@@ -26,6 +26,8 @@ body,
 .source {
   color: #1db0ff;
   font-size: 0.9rem;
+  font-style: italic;
+  text-decoration: underline;
   position: absolute;
   top: 0;
   left: 0;
